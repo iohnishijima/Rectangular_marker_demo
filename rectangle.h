@@ -11,13 +11,13 @@ class Rects
  public:
   // コンストラクタ
   Rects();
-  Rects(const Eigen::Vector4d& _u);
+  Rects(const Eigen::Vector4d& _params);
 
   // デストラクタ
   ~Rects();
 
   // 長方形パラメータを登録する関数
-  void   SetParam		(const Eigen::Vector4d& _u);
+  void   SetParam		(const Eigen::Vector4d& _params);
   // 点列を登録する関数
   void   SetPoints		(std::vector<cv::Point> _points);
   // 長方形属性を計算する関数
